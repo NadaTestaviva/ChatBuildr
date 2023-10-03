@@ -6,7 +6,7 @@ import store from "./store";
 import router from "./router";
 
 const axiosClient = axios.create({
-  baseURL: `${import.meta.env.VITE_API_BASE_URL}/api`
+  baseURL: `${import.meta.env.VITE_API_BASE_URL}/api`,
 })
 
 axiosClient.interceptors.request.use(config => {
@@ -19,9 +19,9 @@ axiosClient.interceptors.response.use(response => {
 }, error => {
   if (error.response.status === 401) {
     sessionStorage.removeItem('TOKEN')
-    router.push({name: 'Login'})
+    router.push({ name: 'Login' })
   } else if (error.response.status === 404) {
-    router.push({name: 'NotFound'})
+    router.push({ name: 'NotFound' })
   }
   throw error;
 })

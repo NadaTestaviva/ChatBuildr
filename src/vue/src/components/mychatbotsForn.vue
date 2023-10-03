@@ -12,7 +12,7 @@
               <div class="form">
                 <div class="frame-11">
                   <div class="my-account-wrapper"><div class="my-account-2">chatbot test</div></div>
-                  <img class="rectangle" src="img/rectangle-1.png" />
+                  <img class="rectangle" src="../img/rectangle-1.png" />
                 </div>
               </div>
             </div>

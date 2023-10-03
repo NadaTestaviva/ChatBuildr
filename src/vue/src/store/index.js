@@ -30,51 +30,51 @@ const store = createStore({
   getters: {},
   actions: {
 
-    register({commit}, user) {
+    register({ commit }, user) {
       return axiosClient.post('/register', user)
-        .then(({data}) => {
+        .then(({ data }) => {
           commit('setUser', data.user);
           commit('setToken', data.token)
           return data;
         })
     },
-    login({commit}, user) {
+    login({ commit }, user) {
       return axiosClient.post('/login', user)
-        .then(({data}) => {
+        .then(({ data }) => {
           commit('setUser', data.user);
           commit('setToken', data.token)
           return data;
         })
     },
-    logout({commit}) {
+    logout({ commit }) {
       return axiosClient.post('/logout')
         .then(response => {
           commit('logout')
           return response;
         })
     },
-    getUser({commit}) {
+    getUser({ commit }) {
       return axiosClient.get('/user')
-      .then(res => {
-        console.log(res);
-        commit('setUser', res.data)
-      })
+        .then(res => {
+          console.log(res);
+          commit('setUser', res.data)
+        })
     },
-    getDashboardData({commit}) {
+    getDashboardData({ commit }) {
       commit('dashboardLoading', true)
       return axiosClient.get(`/dashboard`)
-      .then((res) => {
-        commit('dashboardLoading', false)
-        commit('setDashboardData', res.data)
-        return res;
-      })
-      .catch(error => {
-        commit('dashboardLoading', false)
-        return error;
-      })
+        .then((res) => {
+          commit('dashboardLoading', false)
+          commit('setDashboardData', res.data)
+          return res;
+        })
+        .catch(error => {
+          commit('dashboardLoading', false)
+          return error;
+        })
 
     },
-    getSurveys({ commit }, {url = null} = {}) {
+    getSurveys({ commit }, { url = null } = {}) {
       commit('setSurveysLoading', true)
       url = url || "/survey";
       return axiosClient.get(url).then((res) => {
@@ -137,8 +137,8 @@ const store = createStore({
         return res;
       });
     },
-    saveSurveyAnswer({commit}, {surveyId, answers}) {
-      return axiosClient.post(`/survey/${surveyId}/answer`, {answers});
+    saveSurveyAnswer({ commit }, { surveyId, answers }) {
+      return axiosClient.post(`/survey/${surveyId}/answer`, { answers });
     },
   },
   mutations: {
@@ -174,7 +174,7 @@ const store = createStore({
     setCurrentSurvey: (state, survey) => {
       state.currentSurvey.data = survey.data;
     },
-    notify: (state, {message, type}) => {
+    notify: (state, { message, type }) => {
       state.notification.show = true;
       state.notification.type = type;
       state.notification.message = message;

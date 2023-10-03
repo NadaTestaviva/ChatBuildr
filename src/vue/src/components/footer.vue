@@ -66,7 +66,7 @@
                         <div class="text-wrapper-59">Link to Instagram feed</div>
                       </div>
                     </div>
-                    <img class="frame-34" src="img/frame-2.svg" />
+                    <img class="frame-34" src="../img/frame-2.svg" />
                     <div class="frame-35">
                       <div class="frame-31">
                         <div class="text-wrapper-60">Link to Dribbble shots</div>

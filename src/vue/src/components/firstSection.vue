@@ -6,7 +6,7 @@
         </div>
       </div>
       <div class="frame-10">
-        <div class="slack-hero-png-wrapper"><img class="slack-hero-png" src="img/slack-hero-png.png" /></div>
+        <div class="slack-hero-png-wrapper"><img class="slack-hero-png" src="../img/slack-hero-png.png" /></div>
         <div class="frame-wrapper">
           <div class="frame-11">
             <div class="auto-layout-vertical">

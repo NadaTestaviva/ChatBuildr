@@ -32,10 +32,10 @@
                             </div>
                             <div class="border-2">
                               <div class="overlap-group-2">
-                                <img class="left" src="img/left-1.svg" />
-                                <img class="right" src="img/right-1.svg" />
-                                <img class="top" src="img/top-1.svg" />
-                                <img class="bottom" src="img/bottom-1.svg" />
+                                <img class="left" src="../img/left-1.svg" />
+                                <img class="right" src="../img/right-1.svg" />
+                                <img class="top" src="../img/top-1.svg" />
+                                <img class="bottom" src="../img/bottom-1.svg" />
                               </div>
                             </div>
                           </div>
@@ -60,7 +60,7 @@
                               <div class="frame-15">
                                 <div class="overlap-group-3">
                                   <button class="button-2">
-                                    <img class="SVG" src="img/svg.svg" />
+                                    <img class="SVG" src="../img/svg.svg" />
                                     <div class="text-wrapper-52">Choose Files</div>
                                   </button>
                                   <button class="button-3"><div class="text-wrapper-53">+</div></button>
@@ -74,10 +74,10 @@
                   </div>
                   <div class="border-3">
                     <div class="overlap-2">
-                      <img class="left-2" src="img/right.svg" />
-                      <img class="right-2" src="img/right.svg" />
-                      <img class="top-2" src="img/bottom.svg" />
-                      <img class="bottom-2" src="img/bottom.svg" />
+                      <img class="left-2" src="../img/right.svg" />
+                      <img class="right-2" src="../img/right.svg" />
+                      <img class="top-2" src="../img/bottom.svg" />
+                      <img class="bottom-2" src="../img/bottom.svg" />
                     </div>
                   </div>
                 </div>

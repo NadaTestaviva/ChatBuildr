@@ -131,6 +131,7 @@ function login(ev) {
       });
     })
     .catch((err) => {
+      console.log("error is : "+err);
       loading.value = false;
       errorMsg.value = err.response.data.error;
     });
