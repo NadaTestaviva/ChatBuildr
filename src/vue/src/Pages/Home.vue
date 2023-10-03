@@ -51,7 +51,7 @@ export default {
 @import url("../globals.css");
 
 .container {
-  width: inherit;
-}
+    width: 100%;
+    max-width: 100% !important;}
 
 </style>
