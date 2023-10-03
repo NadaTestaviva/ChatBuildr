@@ -116,7 +116,7 @@ function login(ev) {
     .then(() => {
       loading.value = false;
       router.push({
-        name: "Dashboard",
+        name: "MyChatbots",
       });
     })
     .catch((err) => {

@@ -1,11 +1,11 @@
 <template>
     <div class="my-account">
         <div class="frame">
-            <!-- <Footer></Footer> -->
+            <Footer></Footer>
             <div class="overlap">
                 <ProfileContent></ProfileContent>
             </div>
-            <Nav></Nav>
+            <!-- <Nav></Nav> -->
             <Footer></Footer>
       </div>
     </div>

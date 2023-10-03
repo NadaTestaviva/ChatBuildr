@@ -1,35 +1,24 @@
 <template>
     <div class="my-chatbots-logged">
       <div class="overlap-group-wrapper">
-        <div class="overlap-group">
             <chatbots-form></chatbots-form>
-            <Nav></Nav>
+            <!-- <Nav></Nav> -->
             <Footer></Footer>
-
-          </div>
       </div>
     </div>        
         
 </template>
 
-
-<script>
-import PricingPckg from "../components/PricingsPackages.vue";
-import FAQ from "../components/PricingFAQ.vue";
+<script setup>
 import Footer from "../components/footer.vue";
-import Nav from "../components/nav.vue";
 import ChatbotsForm from "../components/mychatbotsForn.vue";
 
-export default {
-  name: "App",
-  components: {
-    PricingPckg,
-    FAQ,
-    Footer,
-    Nav,
-    ChatbotsForm,
-  },
-};
+import { useStore } from "vuex";
+
+const store = useStore();
+
+
+store.dispatch("getDashboardData");
 </script>
 
 <style>

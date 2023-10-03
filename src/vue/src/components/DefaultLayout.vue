@@ -192,8 +192,8 @@ import { useRouter } from "vue-router";
 import Notification from "./Notification.vue";
 
 const navigation = [
-  { name: "Dashboard", to: { name: "Dashboard" } },
-  { name: "surveys", to: { name: "Surveys" } },
+  { name: "Chatbots", to: { name: "Dashboard" } },
+  { name: "My Account", to: { name: "Surveys" } },
 ];
 
 export default {
