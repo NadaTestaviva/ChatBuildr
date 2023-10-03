@@ -1,0 +1,26 @@
+version: '2'
+services:
+  laravelvuejs:
+    build: .
+    container_name: laravel.vuejs.app
+    ports:
+      - 3000:80
+    volumes:
+      - ./src:/usr/share/nginx/html:delegated
+      - ./devops/nginx/default.development.conf:/etc/nginx/sites-enabled/default
+      - ./devops/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./devops/php/php.development.ini:/etc/php/8.1/fpm/php.ini
+      - ./devops/php/php-fpm.conf:/etc/php/8.1/fpm/php-fpm.conf
+      - ./devops/php/www.conf:/etc/php/8.1/fpm/pool.d/www.conf
+      - ./devops/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+
+  db:
+        image: mysql/mysql-server:5.7
+        container_name: laravel.vuejs.db
+        ports:
+            - 3030:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: pass
+            MYSQL_USER: root
+            MYSQL_PASSWORD: pass
+            MYSQL_DATABASE: db_laravel  
