@@ -1,12 +1,5 @@
 <template>
-    <div class="my-account">
-        <div class="frame">
-            <div class="overlap">
-                <ProfileContent></ProfileContent>
-            </div>
-            <!-- <Nav></Nav> -->
-      </div>
-    </div>
+    <ProfileContent></ProfileContent>
     <Footer></Footer>
 
 </template>

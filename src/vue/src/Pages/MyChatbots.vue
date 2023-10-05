@@ -2,10 +2,10 @@
     <div class="my-chatbots-logged">
       <div class="overlap-group-wrapper">
             <chatbots-form></chatbots-form>
-            <!-- <Nav></Nav> -->
-            <Footer></Footer>
       </div>
-    </div>        
+    </div>       
+    <Footer></Footer>
+ 
         
 </template>
 

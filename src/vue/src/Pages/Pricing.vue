@@ -1,17 +1,8 @@
 <template>
-    <div class="pricing">
-      <div class="overlap-wrapper">
-        <div class="overlap">
-          <div class="frame">
-            <Nav></Nav>
-            <pricing-pckg></pricing-pckg>
-                <FAQ></FAQ>
-          </div>
-        </div>
+        <Nav></Nav>
+        <pricing-pckg></pricing-pckg>
+        <FAQ></FAQ>
         <Footer></Footer>
-
-      </div>
-    </div>
 </template>
 
 

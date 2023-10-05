@@ -124,6 +124,7 @@ const routes = [
             { path: "/dashboard", name: "Dashboard", component: MyChatbots },
             { path: "/my-chatbots", name: "MyChatbots", component: MyChatbots },
             { path: "/profile", name: "Profile", component: Profile },
+            { path: '/create-chatbot', name: 'CreateChatbot', component: CreateChatbot },
             { path: "/surveys", name: "Surveys", component: Profile },
             { path: "/surveys/create", name: "SurveyCreate", component: SurveyView },
             { path: "/surveys/:id", name: "SurveyView", component: SurveyView },

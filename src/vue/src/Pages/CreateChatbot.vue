@@ -1,15 +1,6 @@
 <template>
-    <!-- <Nav></Nav> -->
-    <div class="new-chatbot">
-      <div class="overlap-group-wrapper">
-        <div class="overlap">
-            <Footer></Footer>
-            <CreateChatbotForm></CreateChatbotForm>
-            <Footer></Footer>
-
-        </div>
-      </div>
-    </div>
+    <CreateChatbotForm></CreateChatbotForm>
+    <Footer></Footer>
 </template>
 
 

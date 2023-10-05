@@ -1,15 +1,7 @@
 <template>
-    <!-- <Nav></Nav> -->
-    <div class="provacy-policy">
-      <div class="div">
-        <div class="overlap-group">
-            <PrivacyContent></PrivacyContent>
-        </div>
-        <Nav></Nav>
-      </div>
-    </div>
+    <Nav></Nav>
+    <PrivacyContent></PrivacyContent>
     <Footer></Footer>
-
 </template>
 
 

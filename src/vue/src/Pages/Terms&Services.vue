@@ -1,12 +1,6 @@
 <template>
-    <div class="terms-of-service">
-      <div class="div">
-        <div class="overlap-group">
-            <TermsContent></TermsContent>
-        </div>
-        <Nav></Nav>
-      </div>
-    </div>
+    <Nav></Nav>
+    <TermsContent></TermsContent>
     <Footer></Footer>
 </template>
 
