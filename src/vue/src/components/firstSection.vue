@@ -2,7 +2,7 @@
     <div class="frame-9">
       <div class="auto-layout-wrapper">
         <div class="auto-layout">
-          <p class="everything-you-need">Everything you need for your AI ChatGenius</p>
+          <p class="everything-you-need">Everything you need for your AI ChatBuildr</p>
         </div>
       </div>
       <div class="frame-10">
@@ -13,12 +13,12 @@
               <div class="frame-12">
                 <div class="frame-13"><div class="frame-14"></div></div>
                 <div class="hi-i-am-chatbaseai-wrapper">
-                  <p class="hi-i-am-chatbaseai">👋 Hi! I am ChatGenius, ask me anything about ChatGenius!</p>
+                  <p class="hi-i-am-chatbaseai">👋 Hi! I am ChatBuildr, ask me anything about ChatBuildr!</p>
                 </div>
               </div>
             </div>
             <div class="frame-15">
-              <div class="frame-16"><div class="text-wrapper-14">What is ChatGenius?</div></div>
+              <div class="frame-16"><div class="text-wrapper-14">What is ChatBuildr?</div></div>
               <div class="frame-17">
                 <div class="overlap-group-2"><div class="frame-18"></div></div>
               </div>
@@ -32,9 +32,9 @@
               </div>
               <div class="frame-23">
                 <p class="hi-i-am-chatbaseai-2">
-                  ChatGenius is an AI chatbot builder that allows you to train ChatGPT on your data. It
+                  ChatBuildr is an AI chatbot builder that allows you to train ChatGPT on your data. It
                   enables you to add a chat widget to your website or interact with the chatbot through the
-                  API. You can upload a document and ChatGenius will create a chatbot that can answer
+                  API. You can upload a document and ChatBuildr will create a chatbot that can answer
                   questions about the content. It&#39;s a powerful tool for enhancing user engagement and
                   providing automated support.
                 </p>

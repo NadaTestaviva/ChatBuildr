@@ -6,7 +6,7 @@
                   </div>
                   <div class="p-css">
                     <p class="p">
-                      You don’t have to be a tech-savvy genius to create chatbots. With ChatGenius<br />chatbot builder,
+                      You don’t have to be a tech-savvy genius to create chatbots. With ChatBuildr<br />chatbot builder,
                       you can build a custom chatbot in minutes.
                     </p>
                   </div>
@@ -100,7 +100,7 @@
   <div id="sceFragment"  class="bg-white py-24 sm:py-32" style="text-align: center; ">
 
     <p style="  font-size: 2.8em;" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Create your own chatbot without writing a<br />single line of code</p>
-    <h3 class="text-base leading-7" style="  font-size: 1.2em;/*! display: block ruby; */margin-top: revert;">You don’t have to be a tech-savvy genius to create chatbots. With ChatGenius<br />chatbot builder,
+    <h3 class="text-base leading-7" style="  font-size: 1.2em;/*! display: block ruby; */margin-top: revert;">You don’t have to be a tech-savvy genius to create chatbots. With ChatBuildr<br />chatbot builder,
                       you can build a custom chatbot in minutes.</h3>
     <div class="mx-auto max-w-7xl px-6 lg:px-8" style="padding-top:58px;max-width: 72rem !important;">
       <div class="mx-auto max-w-2xl lg:text-center" style="max-width: inherit !important;">

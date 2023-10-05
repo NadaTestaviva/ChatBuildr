@@ -119,7 +119,7 @@
                     <a href="#" class="hover:underline"> Desktop Apps</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">ChatGenius Plugin</a>
+                    <a href="#" class="hover:underline">ChatBuildr Plugin</a>
                 </li>
                 <li class="mb-4">
                     <a href="#" class="hover:underline">Partner program</a>

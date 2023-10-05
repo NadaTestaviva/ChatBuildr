@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white">
-    <header class="absolute inset-x-0 top-0 z-50">
+    <header class="absolute inset-x-0 top-0 z-50" style="background-color: white;">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="../img/frame-8.png" alt="">
+            <!-- <img class="h-8 w-auto" src="../img/frame-8.png" alt=""> -->
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -17,15 +17,15 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <router-link class="text-sm font-semibold leading-6 text-gray-900" to="/">Home</router-link>
-          <router-link class="text-sm font-semibold leading-6 text-gray-900" to="/pricing">Pricing</router-link>
-          <router-link class="text-sm font-semibold leading-6 text-gray-900" to="/terms">Terms &amp; Services</router-link>
-          <router-link class="text-sm font-semibold leading-6 text-gray-900" to="/privacy">Privacy Policy</router-link>
+          <router-link class="text-lg font-semibold leading-6 text-gray-900" to="/">Home</router-link>
+          <router-link class="text-lg font-semibold leading-6 text-gray-900" to="/pricing">Pricing</router-link>
+          <router-link class="text-lg font-semibold leading-6 text-gray-900" to="/terms">Terms &amp; Services</router-link>
+          <router-link class="text-lg font-semibold leading-6 text-gray-900" to="/privacy">Privacy Policy</router-link>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12">
 
-          <router-link  class="text-sm font-semibold leading-6 text-gray-900" to="/profile">My Account</router-link>
-          <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+          <router-link  style="margin-top: .5em;" class="text-lg font-semibold leading-6 text-gray-900" to="/profile">My Account</router-link>
+          <button type="submit" style="background: linear-gradient(180deg, rgb(0, 153, 255) 0%, rgb(204, 0, 255) 100%);" class="rounded-md bg-indigo-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             <router-link to="/my-chatbots">My Chatbots</router-link>
           </button>
         </div>
@@ -38,7 +38,7 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+              <img class="h-8 w-auto" src="/src/img/frame-8.png" alt="">
             </a>
             <button type="button" v-on:click="isHidden = true" class="-m-2.5 rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Close menu</span>

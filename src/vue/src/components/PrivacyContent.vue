@@ -10,9 +10,9 @@
                       </p>
                     </div>
                     <div class="heading-ABOUT">1. ABOUT</div>
-                    <div class="chatgenius-inc-and-wrapper">
-                      <p class="chatgenius-inc-and">
-                        <span class="span">ChatGenius, Inc. and its affiliates’ (“</span>
+                    <div class="ChatBuildr-inc-and-wrapper">
+                      <p class="ChatBuildr-inc-and">
+                        <span class="span">ChatBuildr, Inc. and its affiliates’ (“</span>
                         <span class="text-wrapper">Chatbot</span>
                         <span class="span">,” “</span>
                         <span class="text-wrapper">we</span>
@@ -41,7 +41,7 @@
                       <p class="div-2">
                         <span class="span"
                           >This Privacy Policy applies to personal information collected, processed, and shared by<br />us,
-                          including on our websites (e.g., ChatGenius.com, designsystems.com and any other<br />websites
+                          including on our websites (e.g., ChatBuildr.com, designsystems.com and any other<br />websites
                           that we own or operate), our mobile applications, our application program<br />interfaces, our
                           design tool services, and our related online and offline offerings<br />(collectively, the
                           “</span
@@ -54,7 +54,7 @@
                       <p class="div-2">
                         This Privacy Policy does not apply to any processing by third-party websites, services<br />or
                         applications, even if they are accessible through our Services. It does apply to data<br />received
-                        by ChatGenius from such third-parties. In addition, a separate privacy notice,<br />available
+                        by ChatBuildr from such third-parties. In addition, a separate privacy notice,<br />available
                         upon request if it applies to you, governs processing relating to our current<br />employees and
                         contractors.
                       </p>
@@ -77,10 +77,10 @@
                       <p class="div-2">
                         <span class="text-wrapper">Account Information</span>
                         <span class="span"
-                          >. When you create a ChatGenius account, we collect the personal<br />information you provide
+                          >. When you create a ChatBuildr account, we collect the personal<br />information you provide
                           to us, such as your name, email address, personal website, and<br />picture. If you enable
                           phone based two-factor authentication, we collect a phone<br />number and you agree to receive
-                          text messages from ChatGenius to enable two-factor<br />authentication when you login. Message
+                          text messages from ChatBuildr to enable two-factor<br />authentication when you login. Message
                           and data rates may apply.</span
                         >
                       </p>
@@ -92,9 +92,9 @@
                           Where we sell products and services through the Services, we<br />use third-party
                           applications, such as the Apple App Store, Google Play App Store,<br />Amazon App Store,
                           and/or services such as Stripe to process your payments. These<br />third-party applications
-                          will collect information from you to process a payment on<br />behalf of ChatGenius, including
+                          will collect information from you to process a payment on<br />behalf of ChatBuildr, including
                           your name, email address, mailing address, payment card<br />information, and other billing
-                          information. ChatGenius does not receive or store your<br />payment information, but it may
+                          information. ChatBuildr does not receive or store your<br />payment information, but it may
                           receive and store information associated with your<br />payment information (e.g., the fact
                           that you have paid, the last four digits or your credit<br />card information, and your
                           country of origin).</span
@@ -138,7 +138,7 @@
                           >Customer Service Information (including Training and Quality Assurance).</span
                         >
                         <span class="span">
-                          If you<br />call or otherwise interact with ChatGenius’s sales, customer service or support
+                          If you<br />call or otherwise interact with ChatBuildr’s sales, customer service or support
                           personnel,<br />we collect the information you provide to our representatives. In addition, we
                           may<br />record telephone calls or video conferences between you and our representatives
                           for<br />training or quality assurance purposes.</span
@@ -158,7 +158,7 @@
                           >, you may only use the Services if you are old enough to consent<br />(by yourself and not by
                           a parent or guardian) to share your data under applicable law.<br />For example, you must be
                           13 years or older under most United States’ law, or 16 years<br />or older under California or
-                          European Union law. If you are using ChatGenius Community,<br />you must be at least 16 years
+                          European Union law. If you are using ChatBuildr Community,<br />you must be at least 16 years
                           or older. Users under the age of 13 may use the Services<br />pursuant to an agreement we have
                           with the student’s educational institution (see<br />Children’s Information below)</span
                         >
@@ -180,7 +180,7 @@
                         <span class="text-wrapper">Marketing Program and Co-Promotional Activities Information.</span>
                         <span class="span">
                           In connection with<br />applying to and participating in any marketing or partnership programs
-                          offered by<br />ChatGenius, we may collect and process the information you provide to us, such
+                          offered by<br />ChatBuildr, we may collect and process the information you provide to us, such
                           as name,<br />email address, mailing address, and any information specific to the program, to
                           assess<br />your suitability for participation and administer the program.</span
                         >

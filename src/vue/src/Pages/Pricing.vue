@@ -3,12 +3,10 @@
       <div class="overlap-wrapper">
         <div class="overlap">
           <div class="frame">
+            <Nav></Nav>
             <pricing-pckg></pricing-pckg>
-            <div class="frame-35-pricing">
                 <FAQ></FAQ>
-            </div>
           </div>
-          <Nav></Nav>
         </div>
         <Footer></Footer>
 
