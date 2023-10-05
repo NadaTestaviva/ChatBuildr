@@ -5,9 +5,9 @@
             <TermsContent></TermsContent>
         </div>
         <Nav></Nav>
-        <Footer></Footer>
       </div>
     </div>
+    <Footer></Footer>
 </template>
 
 

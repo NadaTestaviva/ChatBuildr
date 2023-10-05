@@ -4,11 +4,12 @@
         <div class="overlap-group">
           <Nav></Nav>
           <LoginForm></LoginForm>
-          <Footer></Footer>
 
         </div>
       </div>
     </div>
+    <Footer></Footer>
+
 </template>
 
 

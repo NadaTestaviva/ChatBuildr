@@ -7,10 +7,11 @@
             <div class="frame-35-pricing">
                 <FAQ></FAQ>
             </div>
-            <Footer></Footer>
           </div>
           <Nav></Nav>
         </div>
+        <Footer></Footer>
+
       </div>
     </div>
 </template>

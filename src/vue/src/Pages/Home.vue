@@ -9,11 +9,12 @@
               <Second></Second>
               <Tools></Tools>
               <Third></Third>
-              <Footer></Footer>
-              <Faq></Faq>
               <Banner></Banner>
+              <Faq></Faq>
             </div>
           </div>
+          <Footer></Footer>
+
         </div>
       </div>
     </div>
