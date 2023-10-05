@@ -7,6 +7,7 @@
             <div class="container">
               <Slider></Slider>
               <Second></Second>
+              <Tools></Tools>
               <Third></Third>
               <Footer></Footer>
               <Faq></Faq>
@@ -29,6 +30,7 @@ import Faq from "../components/faq.vue";
 import Third from "../components/thirdFragment.vue";
 import Banner from "../components/banner.vue";
 import Slider from "../components/slider.vue";
+import Tools from "../components/ToolsSection.vue";
 
 
 export default {
@@ -42,6 +44,7 @@ export default {
     Third,
     Banner,
     Slider,
+    Tools
   },
 };
 </script>

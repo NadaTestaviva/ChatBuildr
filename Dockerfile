@@ -40,10 +40,12 @@ RUN apt-get update \
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Install Composer
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-RUN php -r "unlink('composer-setup.php');"
-RUN usermod -u 1000 www-data
+# RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+# RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+# RUN php -r "unlink('composer-setup.php');"
+# RUN usermod -u 1000 www-data
+RUN curl -sS https://getcomposer.org/installer | php -- \
+--install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 
 # Install PDF Tool
 RUN apt-get install libxrender1 -y
