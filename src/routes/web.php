@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/uploaddoc', [\App\Http\Controllers\Controller::class, 'uploaddoc'])->name('uploaddoc');
+
+// Route::get('/uploaddoc',function(Request $request){
+//     return $request;
+// })->name('uploaddoc');
