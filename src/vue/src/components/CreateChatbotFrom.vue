@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import { computed } from "vue";
+  import { computed } from "vue";
 
  export default {
   setup(){
@@ -116,6 +116,7 @@ import { computed } from "vue";
       onFileChange(e){
                 console.log(e.target.files[0]);
                 this.file = e.target.files[0];
+                console.log(this.user);
             },
             formSubmit(e) {
 
@@ -142,10 +143,10 @@ import { computed } from "vue";
                     currentObj.output = error;
                 });
               }
- }
-}
-import store from "../store";
-import axios from 'axios';
+  }
+  }
+  import store from "../store";
+  import axios from 'axios';
 
 </script>
 

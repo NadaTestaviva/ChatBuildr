@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/uploaddoc', [\App\Http\Controllers\Controller::class, 'uploaddoc'])->name('uploaddoc');
+Route::get('/chatbots', [\App\Http\Controllers\Controller::class, 'chatbots'])->name('chatbots');
 
 // Route::get('/uploaddoc',function(Request $request){
 //     return $request;
