@@ -1,36 +1,4 @@
 <template>
-              <!-- <div class="main-section"></div>
-          <div class="div-t-PJLV-wrapper">
-            <div class="div-t-PJLV">
-              <div class="div-supabase-ui-auth"></div>
-              <div class="my-account">My Chatbots</div>
-              <button class="auto-layout-7-5">
-                <router-link class="text-wrapper-72" to="/create-chatbot">New Chatbot</router-link>
-
-              </button>
-              <div class="form">
-                <div class="frame-11">
-                  <div class="my-account-wrapper"><div class="my-account-2">chatbot test</div></div>
-                  <img class="rectangle" src="../img/rectangle-1.png" />
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
@@ -57,56 +25,37 @@
 
 </template>
 
-<!-- 
-<script setup>
-import axios from 'axios';
-
-let chatbots="";
-
-const url = "http://localhost:8000/chatbots";     
-
-axios.get(url)
-.then(function (response) {
-  console.log(response);
-  chatbots = response;
-  // window.location.href = 'dashboard';
-})
-.catch(function (error) {
-  alert(error);
-  console.log(error);
-});
-
-
-
-</script> -->
-
-
 <script>
 import axios from 'axios';
+import store from "../store";
+import { toRaw } from 'vue';
+import { computed } from "vue";
 
 export default {
+  setup() {
+    store.dispatch("getUser");
+    console.log(toRaw(store.state.user));
+  },
   data () {
     return {
+      user: computed(() => store.state.user.data),
       info: null,
       errored: false
-    }
-  },
-  filters: {
-    currencydecimal (value) {
-      return value.toFixed(2)
     }
   },
   mounted () {
     const url = "http://localhost:8000/chatbots";     
     axios
-      .get(url)
+      .post(url,this.user.id)
       .then(response => {
+        console.log(this.user);
         this.info = response.data
+        console.log(toRaw(this.info));
       })
       .catch(error => {
         console.log(error)
         this.errored = true
       });
-  }
+    }
 }
 </script>

@@ -10,6 +10,7 @@ use File;
 use App\Models\User;
 use App\Models\Chatbot;
 use App\Models\UploadFile;
+use Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
 
@@ -41,7 +42,9 @@ class Controller extends BaseController
 
 
     public function chatbots(Request $request){
-        $chatbots = Chatbot::get();
+        $userId = $request->getContent();
+        $chatbots = Chatbot::where('user_id',$userId)->get();
+        Log::info($chatbots);
         return $chatbots;
     }
 }

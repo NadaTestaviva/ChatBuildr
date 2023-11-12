@@ -1,113 +1,4 @@
 <template>
-<!--
-              <div class="frame-21">
-                <div class="overlap-2">
-                  <div class="image-wrapper"><img class="image" src="../img/image-1.png" /></div>
-                  <div class="frame-22-pricing">
-                    <div class="auto-layout-3"><div class="text-wrapper-14">Learn more</div></div>
-                    <div class="frame-23">
-                      <div class="text-wrapper-15-pricing">Business</div>
-                      <p class="text-wrapper-16-pricing">When you need custom limits and app features.</p>
-                    </div>
-                  </div>
-                  <div class="pricing-frame-24">
-                    <div class="pricing-frame-25">
-                      <div class="overlap-3">
-                        <div class="pricing-frame-26">
-                          <div class="overlap-group-4">
-                            <div class="pricing-frame-27"></div>
-                            <img class="pricing-frame-28" src="../img/frame-23.svg" />
-                          </div>
-                          <div class="frame-29-pricing">
-                            <div class="text-wrapper-17-pricing">Services</div>
-                            <div class="auto-layout-9-5">
-                              <img class="frame-30-pricing" src="../img/frame-27.svg" />
-                              <div class="text-wrapper-18-pricing">Onboarding</div>
-                            </div>
-                            <div class="auto-layout-9">
-                              <img class="frame-30-pricing" src="../img/frame-26.svg" />
-                              <div class="text-wrapper-18-pricing">Launch support</div>
-                            </div>
-                            <div class="auto-layout-10">
-                              <img class="frame-30-pricing" src="../img/frame-25.svg" />
-                              <div class="text-wrapper-18-pricing">SEO &amp; performance audit</div>
-                            </div>
-                            <div class="auto-layout-11">
-                              <img class="frame-30-pricing" src="../img/frame-24.svg" />
-                              <div class="text-wrapper-18-pricing">Slack channel with Framer</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="rectangle-3"></div>
-                      </div>
-                    </div>
-                    <div class="frame-31-pricing">
-                      <div class="overlap-3">
-                        <div class="pricing-frame-26">
-                          <div class="overlap-group-4">
-                            <div class="frame-32-pricing"></div>
-                            <img class="pricing-frame-28" src="../img/frame-18.svg" />
-                          </div>
-                          <div class="frame-29-pricing">
-                            <div class="text-wrapper-19-pricing">Infrastructure</div>
-                            <div class="auto-layout-9-5">
-                              <img class="frame-30-pricing" src="../img/frame-22.svg" />
-                              <div class="text-wrapper-18-pricing">No hard hosting limits</div>
-                            </div>
-                            <div class="auto-layout-9">
-                              <img class="frame-30-pricing" src="../img/frame-21.svg" />
-                              <div class="text-wrapper-20-pricing">Reverse proxy support</div>
-                            </div>
-                            <div class="auto-layout-10">
-                              <img class="frame-30-pricing" src="../img/frame-20.svg" />
-                              <div class="text-wrapper-18-pricing">Premium Infrastructure</div>
-                            </div>
-                            <div class="auto-layout-11">
-                              <img class="frame-30-pricing" src="../img/frame-19.svg" />
-                              <div class="text-wrapper-18-pricing">Custom application limits</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="rectangle-3"></div>
-                      </div>
-                    </div>
-                    <div class="frame-33-pricing">
-                      <div class="overlap-3">
-                        <div class="pricing-frame-26">
-                          <div class="overlap-group-4">
-                            <div class="frame-34-pricing"></div>
-                            <img class="pricing-frame-28" src="../img/frame-13.svg" />
-                          </div>
-                          <div class="frame-29-pricing">
-                            <div class="legal-security">Legal &amp; security</div>
-                            <div class="auto-layout-12">
-                              <img class="frame-30-pricing" src="../img/frame-17.svg" />
-                              <div class="text-wrapper-20-pricing">Business contract</div>
-                            </div>
-                            <div class="auto-layout-13">
-                              <img class="frame-30-pricing" src="../img/frame-16.svg" />
-                              <div class="text-wrapper-18-pricing">Centralized yearly billing</div>
-                            </div>
-                            <div class="auto-layout-14">
-                              <img class="frame-30-pricing" src="../img/frame-15.svg" />
-                              <div class="text-wrapper-18-pricing">Confidentiality agreement</div>
-                            </div>
-                            <div class="auto-layout-15">
-                              <img class="frame-30-pricing" src="../img/frame-14.svg" />
-                              <div class="text-wrapper-20-pricing">Advanced Security</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="rectangle-3"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Container for demo purpose -->
-
 
 <div style="padding-top: 8em" class="container my-24 mx-auto md:px-6">
   <!-- Section: Design Block -->
@@ -163,7 +54,7 @@
 " type="button"
                   class="inline-block w-full rounded bg-[hsl(0,0%,95%)] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-[hsl(0,0%,93%)] focus:bg-[hsl(0,0%,95%)] focus:outline-none focus:ring-0 active:bg-[hsl(0,0%,90%)]"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <router-link to="/my-chatbots">Try for Free</router-link>
+                  <router-link :to="{ name: `pay`, params: { testString: 'a dynamic string' ,id: 'url'} }" exact >Try for Free</router-link>
                 </button>
               </div>
             </div>
@@ -217,16 +108,7 @@
         </div>
       </div>
     </div>
-    <!-- Pills content -->
   </section>
-  <!-- Section: Design Block -->
-</div>
-<!-- Container for demo purpose -->
-
-
-
-<div style="padding-top: 8em" class="container my-24 mx-auto md:px-6">
-  <!-- Section: Design Block -->
   <section class="mb-32" style="text-align: center;">
     <h2 class="mb-6 text-center text-4xl font-bold">Business</h2>
     <h2 class="mb-12 text-center font-bold">When you need custom limits and app features.</h2>
@@ -374,8 +256,31 @@
         </div>
       </div>
     </div>
-    <!-- Pills content -->
   </section>
-  <!-- Section: Design Block -->
 </div>
 </template>
+
+<script>
+  import { computed } from "vue";
+  import { toRaw } from 'vue';
+
+  export default {
+  setup() {
+    // return axios.get('/user')
+    //     .then(res => {
+    //       console.log(res);
+    //       commit('setUser', res.data)
+    // });
+
+    store.dispatch("getUser");
+    console.log(toRaw(store.state.user.data));
+    return {
+      user: computed(() => store.state.user.data),
+    };
+  },
+};
+
+  import store from "../store";
+  import axios from 'axios';
+
+</script>
