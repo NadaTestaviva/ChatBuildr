@@ -11,6 +11,7 @@ use App\Models\User;
 use App\Models\Chatbot;
 use App\Models\UploadFile;
 use Log;
+use Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
 
@@ -27,7 +28,7 @@ class Controller extends BaseController
         
         $chatbot = Chatbot::create([
             'user_id' => $userId,
-            'name' => "test chatbot"
+            'name' => $request->chatbotName
         ]);
 
         $uploadedFile = UploadFile::create([
@@ -46,5 +47,19 @@ class Controller extends BaseController
         $chatbots = Chatbot::where('user_id',$userId)->get();
         Log::info($chatbots);
         return $chatbots;
+    }
+
+    public function user_edit(Request $request){
+        $userId = $request->id;
+        User::where('id',$userId)->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->phone
+        ]);
+
+         User::whereId($userId)->update([
+            'password' => Hash::make($request->password)
+        ]);
+        return response()->json(['success'=>'You have successfully updated user Data.']);
     }
 }

@@ -13,7 +13,9 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'http://localhost:8000/uploaddoc',
-        'http://localhost:8000/chatbots'
+        'http://localhost:8000/chatbots',
+        'http://localhost:8000/user_edit'
+
 
         //
     ];

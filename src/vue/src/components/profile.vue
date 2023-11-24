@@ -20,107 +20,78 @@
     </template>
     <div v-if="surveyLoading" class="flex justify-center">Loading...</div>
     <form v-else @submit.prevent="saveSurvey" class="animate-fade-in-down">
-      <div class="shadow sm:rounded-md sm:overflow-hidden">
+      <div v-if="user" class="shadow sm:rounded-md sm:overflow-hidden">
         <!-- Survey Fields -->
         <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-          <!-- Image -->
-          <div>
-            <label class="block text-sm font-medium text-gray-700">
-              Image
-            </label>
-            <div class="mt-1 flex items-center">
-              <img
-                v-if="model.image_url"
-                :src="model.image_url"
-                :alt="model.title"
-                class="w-64 h-48 object-cover"
-              />
-              <span
-                v-else
-                class="flex items-center justify-center h-12 w-12 rounded-full overflow-hidden bg-gray-100"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-[80%] w-[80%] text-gray-300"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <button
-                style="background-color: darkslateblue;color: white;"
-                type="button"
-                class="relative overflow-hidden ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                <input
-                  type="file"
-                  @change="onImageChoose"
-                  class="absolute left-0 top-0 right-0 bottom-0 opacity-0 cursor-pointer"
-                />
-                Upload New Photo
-              </button>
-
-              <button
-                style="background-color: darkred;color: white;"
-                type="button"
-                class="relative overflow-hidden ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                <input
-                  type="file"
-                  @change="onImageChoose"
-                  class="absolute left-0 top-0 right-0 bottom-0 opacity-0 cursor-pointer"
-                />
-                Delete
-              </button>
-            </div>
-          </div>
-          <!--/ Image -->
-
+          <!-- ID -->
+          <input
+              type="text"
+              name="id"
+              id="id"
+              style="display: none;"
+              v-model="user.id"
+              autocomplete="user_id"
+              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+              required
+            />
+          
           <!-- Title -->
           <div>
             <label for="title" class="block text-sm font-medium text-gray-700"
-              >First Name</label
-            >
+              >Name*</label>
             <input
               type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
+              name="name"
+              id="name"
+              v-model="user.name"
+              autocomplete="user_name"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+              required
             />
           </div>
 
           <div>
-            <label for="title" class="block text-sm font-medium text-gray-700"
-              >Last Name</label
+          <label for="title" class="block text-sm font-medium text-gray-700"
+              >Email*</label
             >
             <input
               type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
+              name="email"
+              id="email"
+              v-model="user.email"
+              autocomplete="user_email"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+              required  
             />
           </div>
           <!--/ Title -->
 
           <div>
-            <label for="title" class="block text-sm font-medium text-gray-700"
-              >User Name</label
+          <label for="title" class="block text-sm font-medium text-gray-700"
+              >Phone Number*</label
             >
             <input
               type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
+              name="phone"
+              id="phone"
+              v-model="user.phone_number"
+              autocomplete="user_phone"
+              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+              required
+              />
+          </div>
+          <!--/ Title -->
+
+
+          <div>
+          <label for="title" class="block text-sm font-medium text-gray-700"
+              >New Password</label
+            >
+            <input
+              type="text"
+              name="password"
+              id="password"
+              autocomplete="user_password"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
             />
           </div>
@@ -128,59 +99,14 @@
 
           <div>
           <label for="title" class="block text-sm font-medium text-gray-700"
-              >Email Address</label
+              >Confirm Password</label
             >
             <input
               type="text"
-              name="title"
-              id="title"
+              name="confirm_password"
+              id="confirm_password"
               v-model="model.title"
-              autocomplete="survey_title"
-              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-          <!--/ Title -->
-
-          <div>
-          <label for="title" class="block text-sm font-medium text-gray-700"
-              >Phone Number</label
-            >
-            <input
-              type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
-              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-          <!--/ Title -->
-
-          <div>
-          <label for="title" class="block text-sm font-medium text-gray-700"
-              >Location</label
-            >
-            <input
-              type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
-              class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-            />
-          </div>
-          <!--/ Title -->
-
-          <div>
-          <label for="title" class="block text-sm font-medium text-gray-700"
-              >Timezone</label
-            >
-            <input
-              type="text"
-              name="title"
-              id="title"
-              v-model="model.title"
-              autocomplete="survey_title"
+              autocomplete="user_confirm_password"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
             />
           </div>
@@ -190,7 +116,7 @@
 
         <div class="px-4 py-12 bg-gray-50 text-right sm:px-6 " style ="display: flex;">
           <TButton style="  margin-right: 2em;">
-            <SaveIcon class="w-5 h-5 mr-2" />
+            <SaveIcon @click="saveUserData" class="w-5 h-5 mr-2" />
             Save
           </TButton>
 
@@ -205,6 +131,7 @@
 </template>
 
 <script setup>
+import axios from 'axios';
 import { v4 as uuidv4 } from "uuid";
 import { computed, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
@@ -220,10 +147,10 @@ const route = useRoute();
 
 // Get survey loading state, which only changes when we fetch survey from backend
 const surveyLoading = computed(() => store.state.currentSurvey.loading);
-
+const user = computed(()=> store.state.user.data);
 // Create empty survey
 let model = ref({
-  title: "",
+  title: user.name,
   slug: "",
   status: false,
   description: null,
@@ -249,69 +176,47 @@ if (route.params.id) {
   store.dispatch("getSurvey", route.params.id);
 }
 
-function onImageChoose(ev) {
-  const file = ev.target.files[0];
 
-  const reader = new FileReader();
-  reader.onload = () => {
-    // The field to send on backend and apply validations
-    model.value.image = reader.result;
+function saveUserData(){
 
-    // The field to display here
-    model.value.image_url = reader.result;
-    ev.target.value = "";
-  };
-  reader.readAsDataURL(file);
-}
-
-function addQuestion(index) {
-  const newQuestion = {
-    id: uuidv4(),
-    type: "text",
-    question: "",
-    description: null,
-    data: {},
-  };
-
-  model.value.questions.splice(index, 0, newQuestion);
-}
-
-function deleteQuestion(question) {
-  model.value.questions = model.value.questions.filter((q) => q !== question);
-}
-
-function questionChange(question) {
-  // Important to explicitelly assign question.data.options, because otherwise it is a Proxy object
-  // and it is lost in JSON.stringify()
-  if (question.data.options) {
-    question.data.options = [...question.data.options];
-  }
-  model.value.questions = model.value.questions.map((q) => {
-    if (q.id === question.id) {
-      return JSON.parse(JSON.stringify(question));
-    }
-    return q;
-  });
 }
 
 /**
  * Create or update survey
  */
-function saveSurvey() {
-  let action = "created";
-  if (model.value.id) {
-    action = "updated";
-  }
-  store.dispatch("saveSurvey", { ...model.value }).then(({ data }) => {
-    store.commit("notify", {
-      type: "success",
-      message: "The survey was successfully " + action,
+function saveSurvey(submitEvent) {
+  const ID = submitEvent.target.elements.id.value
+  const Username = submitEvent.target.elements.name.value
+  const Email = submitEvent.target.elements.email.value
+  const Phone = submitEvent.target.elements.phone.value
+  const Password = submitEvent.target.elements.password.value
+  const ConfirmPassword = submitEvent.target.elements.confirm_password.value
+
+if(ConfirmPassword != Password)  
+{   
+  alert("Passwords did not match");  
+  return;  
+}
+
+let formData = new FormData();
+formData.append('id', ID);
+formData.append('name',Username);
+formData.append('email',Email);
+formData.append('phone',Phone);
+formData.append('password',Password);
+formData.append('confirm_password',ConfirmPassword);
+ 
+
+const url = "http://localhost:8000/user_edit";     
+  axios
+    .post(url,formData)
+    .then(response => {
+      console.log(response.data);
+      window.location.reload();
+    })
+    .catch(error => {
+      console.log(error)
     });
-    router.push({
-      name: "SurveyView",
-      params: { id: data.data.id },
-    });
-  });
 }
 
 function deleteSurvey() {
